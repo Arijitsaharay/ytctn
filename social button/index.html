@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>social button</title>
+    <!-- font awesome icon link in description -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="opener active" id="opener" onclick="toggle()">
+            <i class="fas fa-plus"></i>
+        </div>
+        <div class="wrapper">
+            <a href="#" class="button"><i class="fab fa-github"></i></a>
+            <a href="#" class="button"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="button"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="button"><i class="fab fa-reddit"></i></a>
+            <a href="#" class="button"><i class="fab fa-google"></i></a>
+        </div>
+    </div>
+    <script>
+        let active = false;
+        function toggle(){
+            let tg = document.getElementById("opener");
+            if (active){
+                tg.classList.remove("active");
+            }else{
+                tg.classList.add("active");
+            }
+            active = !active;
+        }
+    </script>
+</body>
+</html>
