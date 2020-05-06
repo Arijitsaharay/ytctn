@@ -1,0 +1,71 @@
+body{
+    background-color: #f0a500;
+    font-family: sans-serif;
+}
+.subs{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.subs button{
+    color: #f0a500;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 36px;
+    border: none;
+    outline: none;
+    transition-duration: 200ms;
+}
+.subs button:hover{
+    transform: rotate(360deg);
+}
+.subs .field{
+    display: flex;
+    padding: 4px;
+    background-color: transparent;
+    border-radius: 50px;
+    visibility: hidden;
+    transition-duration: 400ms;
+}
+.subs .field input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 0px;
+    overflow: hidden;
+    transition-duration: 400ms;
+}
+.subs.show .field{
+    background-color: #dbdbdb;
+    visibility: visible;
+}
+.subs.show .field input{
+    width: 180px;
+    padding-left: 8px;
+}
+.subs .toggle{
+    position: absolute;
+    right: 4px;
+}
+.subs.show .toggle{
+    right: -40px;
+}
+.subs .toggle i:first-child, .subs.show .toggle i:last-child{
+    display: none;
+}
+.subs.show .toggle i:first-child, .subs .toggle i:last-child{
+    display: block;
+}

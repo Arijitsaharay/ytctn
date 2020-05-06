@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Subscription button</title>
+    <!-- font awesome icon link in description -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="subs" id="subs">
+        <div class="form">
+            <div class="field">
+                <input type="text" name="email" id="email" placeholder="Email me @">
+                <button class="submit">
+                    <i class="fas fa-envelope"></i>
+                </button>
+            </div>
+            <button class="toggle" onclick="toggle()">
+                <i class="fas fa-times"></i>
+                <i class="fas fa-bell"></i>
+            </button>
+        </div>
+    </div>
+    <script>
+        function toggle(){
+            let s = document.getElementById("subs");
+            s.classList.toggle("show");
+        }
+    </script>
+</body>
+</html>
