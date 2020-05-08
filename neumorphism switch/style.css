@@ -1,0 +1,51 @@
+body{
+    background-color: #f7f7f7;
+}
+.switch{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+}
+.switch .frame{
+    width: 96px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    padding: 0 4px;
+    border-radius: 48px;
+    background: #f7f7f7;
+    box-shadow: inset 4px 4px 9px #0000002a,
+                inset -4px -4px 9px #0000001f;
+    transition-duration: 200ms;
+    overflow: hidden;
+}
+.switch .frame .inner{
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    background: linear-gradient(145deg, #ffffff, #dedede);
+    box-shadow: 4px 4px 9px #0000002a,
+                -4px -4px 9px #0000001f;
+    transition-duration: 200ms;
+}
+.switch.active .frame{
+    background: #0779e4;
+}
+.switch.active .frame .inner{
+    margin-left: 56px;
+}
+.switch .indicator{
+    height: 4px;
+    width: 4px;
+    margin-left: 12px;
+    border-radius: 4px;
+    background: #f7f7f7;
+    box-shadow: inset 1px 1px 1px #0000002a,
+                inset -1px -1px 1px #0000001f;
+}
+.switch.active .indicator{
+    background: #0779e4;
+}

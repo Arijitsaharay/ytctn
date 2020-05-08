@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Neumorphism Switch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="switch" id="toggle" onclick="toggle()">
+        <div class="frame">
+            <div class="inner"></div>
+        </div>
+        <div class="indicator"></div>
+    </div>
+    <script>
+        function toggle(){
+            let tg = document.getElementById("toggle");
+            tg.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
